@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="citas.cita">
+            <field name="autor">Odei Riveiro Zafra</field>
+            <field name="cita">Lorem Ipsum Dolor Sit Amet</field>
+			<field name="fecha">12/05/2017</field>
+			<field name="orden">0</field>
+        </record>
+        <record model="citas.cita">
+            <field name="autor">Admin</field>
+            <field name="cita">Cita cargada por defecto</field>
+			<field name="fecha">12/05/2017</field>
+			<field name="orden">1</field>
+        </record>
+    </data>
+</openerp>

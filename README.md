@@ -20,7 +20,7 @@ funcionamiento en versiones anteriores.
 - Navegador Web [Chrome], [Firefox], [Opera], [Microsoft Edge], etc..
 
 ## Licencia
-Esta aplicación se ofrece bajo licencia [GPL versión 3].
+Este plugin se ofrece bajo licencia [GPL versión 3].
 
 [Odoo]: https://www.odoo.com/es_ES/
 [Chrome]: https://www.google.es/chrome/browser/desktop/index.html

@@ -1,4 +1,4 @@
-Plugin Odoo Citas 0.91
+Plugin Odoo Citas 0.92
 ================================
 
 Componente de tipo plugin desarrollado en Python y XML para el ERP Odoo usado para introducir citas y fechas.

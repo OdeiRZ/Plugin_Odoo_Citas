@@ -26,9 +26,8 @@
     'description' : 'Modulo Odoo para gestionar Citas',
 	'category' : 'Otros',
     'depends' : ['base'],
-    'data' : ['citas_view.xml'],
-	'init_xml' : ['citas_data.xml'],
-	'update_xml' : ['citas_view.xml'],
+    'data' : ['security/ir.model.access.csv', 'citas_view.xml'],
+	'demo' : ['citas_data.xml'],
     'installable' : True,
-    'aplication' : True,    
+    'application' : True,
 }

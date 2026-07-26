@@ -59,7 +59,6 @@
         <record model="ir.ui.view" id="view_citas_cita_search">
             <field name="name">view.citas.cita.search</field>
             <field name="model">citas.cita</field>
-			<field name="type">search</field>
             <field name="arch" type="xml">
                 <search string="Citas">
                     <field name="autor"/>

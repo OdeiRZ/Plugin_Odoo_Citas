@@ -1,30 +1,30 @@
-Plugin Odoo Citas 0.92
-================================
+# Plugin Odoo Citas
 
-Componente de tipo plugin desarrollado en Python y XML para el ERP Odoo usado para introducir citas y fechas.
-Permite gestionar citas a través de la interfaz de nuestro ERP, facilitando su creación, listado, consulta, 
-modificación y eliminación de una manera fácil e intuitiva.
+Módulo (addon) para Odoo 8.0 que añade un modelo de "citas célebres" (frases con autor) gestionable desde el propio ERP.
 
-Al tratarse de un plugin instalable, debemos seguir una serie de pasos antes de poder usarlo, en primer lugar 
-tenemos que localizar la carpeta 'addons' de nuestro servidor ERP (Odoo) y posicionar allí el directorio 'citas'
-facilitado (junto a todo su contenido), en segundo lugar reiniciaremos nuestro servidor si lo tenemos en ejecución
-para que detecte el nuevo componente (si no está arrancado no será necesario), y en tercer lugar deberemos buscar
-e instalar el componente desde el menú 'Configuración' -> 'Módulos' -> 'Módulos locales', para localizar el plugin
-bastará con teclear su nombre 'Citas' y pulsar en 'Instalar'.
+## Características
 
-El módulo ha sido desarrollado y testeado en la versión 8.0 del ERP Odoo, por lo que no podemos garantizar su 
-funcionamiento en versiones anteriores.
+- Nuevo modelo `citas.cita` con los campos: autor, texto de la cita, fecha de visualización y orden de visualización.
+- Vistas de lista (tree), formulario y búsqueda integradas en el menú de Odoo, bajo la entrada "Citas".
+- Alta, listado, consulta, modificación y baja de citas desde la interfaz estándar de Odoo (sin necesidad de código adicional).
+- Permisos de acceso al modelo definidos en `security/ir.model.access.csv`.
+- Datos de demostración incluidos (`citas_data.xml`) para probar el módulo tras instalarlo.
 
-## Requisitos
-- [Odoo] 8.0 o superior
-- Navegador Web [Chrome], [Firefox], [Opera], [Microsoft Edge], etc..
+## Tecnologías
+
+- Python (API de modelos de Odoo: `models.Model`, `fields`)
+- XML (vistas y datos de Odoo)
+- Odoo / OpenERP 8.0
+
+## Instalación / Cómo ejecutarlo
+
+1. Copia la carpeta `citas/` (con todo su contenido) dentro del directorio `addons` de tu servidor Odoo.
+2. Si el servidor Odoo ya está en marcha, reinícialo para que detecte el nuevo módulo.
+3. Desde Odoo, ve a **Configuración → Módulos → Módulos locales**, busca "Citas" e instálalo.
+4. Accede al nuevo menú "Citas" para crear, listar y gestionar tus citas célebres.
+
+Desarrollado y probado sobre Odoo 8.0; no se garantiza su funcionamiento en versiones anteriores.
 
 ## Licencia
-Este plugin se ofrece bajo licencia [GPL versión 3].
 
-[Odoo]: https://www.odoo.com/es_ES/
-[Chrome]: https://www.google.es/chrome/browser/desktop/index.html
-[Firefox]: https://www.mozilla.org/es-ES/firefox/new/
-[Opera]: http://www.opera.com/es
-[Microsoft Edge]: https://www.microsoft.com/es-es/windows/microsoft-edge
-[GPL versión 3]: https://www.gnu.org/licenses/gpl-3.0.en.html
+GPL versión 3 (ver archivo [LICENSE](LICENSE)).
